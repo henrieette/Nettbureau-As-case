@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Nettbureau AS</title>
+    </head>
+    <body>
+        
+        <h1>Registrering av personopplysninger</h1>
+        <form name="myForm" action="https://case.nettbureau.no/submit" method="post">
+            <div class="fnavn">
+                <label for="fornavn">Fornavn:</label>
+                <input type="text" name="fornavn" >
+            </div>
+            <div class="enavn">
+                <label for="etternavn">Etternavn:</label>
+                <input type="name" name="etternavn">
+            </div>
+            <div class="tlf">
+                <label for="telefon">Telefonnr:</label>
+                <input type="tel" id="tlfnr" placeholder="xxx-xx-xxx"pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" minlength="8" maxlength="8">
+
+            </div>
+            <div class="bdag">
+                <label for="bursdag">Din bursdag:</label>
+                <input type="date" id="returndate">
+                
+            </div>
+             <div class="kjonn">
+                <label>Kjønn:</label>
+                <label><input type="radio" name="kjonn" value="Mann"/>Mann</label>
+                <label><input type="radio" name="kjonn" value="dame" />Kvinne</label>
+                 <label><input type="radio" name="kjonn" value="annet" />Annet</label>
+            </div>
+            
+            <div class="adresse">
+                <label for="adresse">Adresse:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="postnr">Postnummer:</label> 
+                <input type="number" name="postnr" minlength="4" maxlength="4">
+            </div>
+            <div>
+                <label for="poststed">Poststed:</label>
+                <input type="text" name="poststed" >
+            </div>        
+            <div>
+                <input type="submit" class="submit" value="Send inn">    
+            </div>
+        </form>
+    </body>
+   
+</html>
